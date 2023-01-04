@@ -1,0 +1,10 @@
+.portfolio__section{
+    width: 1200px;
+	margin: 0 auto; 
+    padding-left: 15px;
+	padding-right: 15px;
+    @extend %flex-align;
+}
+.portfolio{
+    border-bottom: 1px solid #EEEEEE;
+}

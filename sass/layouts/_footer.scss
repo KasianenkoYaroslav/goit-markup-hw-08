@@ -1,0 +1,184 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--section-background-color);
+}
+.footer__container{
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1200px;
+}
+.adress__list{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.footer__logo{
+    font-family: 'Raleway';
+    @include font(700, 26, 1.19, 0.03);
+    font-style: normal;
+    color: #2196F3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    margin-right: auto;
+}
+.footer__logo__part{
+    font-family: 'Raleway';
+    @include font(700, 26, 31px, 0.03);
+    font-style: normal;
+    margin-left: auto;
+    color: #FFFFFF;
+}
+.footer__contacts{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(400, 14, 24px, 0.03);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms linear; 
+    &:hover{
+        color: #2196F3;
+    }
+    &:focus{
+        color: #2196F3;
+    }
+    &:active{
+        color: #2196F3;
+    }
+}
+.adress{
+    margin-right: 70px;
+}
+.adress__link{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.adress__contacts{
+    margin-bottom: 12px;
+}
+.adress__item{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(400, 14, 1.71, 0.03);
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    margin-left: auto;
+}
+.social{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.invitation{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(700, 14, 16px, 0.03);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @extend %flex-align;
+    margin-bottom: 20px;
+}
+.invitation__list{
+    @extend %flex-align;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.invitation__items{
+    @include size(44, 44);
+}
+.invitation__link{
+    width: 100%;
+    height: 100%;
+    @extend %flex-align;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4f525a;
+    transition:  background-color 250ms linear, fill 250ms linear;
+    &:hover{
+        background-color: var(--btns-links-color);
+    }
+    &:focus{
+        background-color: var(--btns-links-color);
+    }
+    &:hover .invitation__icons{
+        fill: #FFFFFF;
+    }
+    &:focus .invitation__icons{
+        fill: #FFFFFF;
+    }
+}
+.invitation__icons{
+    @include size(20, 20);
+    fill: #FFFFFF
+}
+.subscriber__form{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.subscriber__form__bottom{
+    display: flex;
+    align-items: baseline;
+}
+.text__form{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(700, 14, 16px, 0.03);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @extend %flex-align;
+    margin-bottom: 20px;
+}
+.input__bottom{
+    @include size(358, 50);
+    @include font(16, 1.25);
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--fon-hero-color);
+    color: rgba(255, 255, 255, 0.6);
+    &:focus,
+    &:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+}
+.input::placeholder.input__bottom{
+    color: rgba(255, 255, 255, 0.6);
+}
+.submit__bottom{
+    @extend %flex-align;
+    @include font(600, 16, 1.88, 0.06);
+    @include size(200, 50);
+    margin-left: 12px;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--btns-links-color);
+    color: #FFFFFF;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-radius: 4px;
+    &:focus,
+    &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+.submit__icon{
+    @include size(24, 24);
+    top: 13px;
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+

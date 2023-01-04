@@ -1,0 +1,40 @@
+.categories{
+    width: 1200px;
+    margin: 0 auto; 
+    padding-left: 15px;
+    padding-right: 15px;
+    @extend %flex-align;
+}
+.categories__list{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @extend %flex-align;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 94px;
+    gap: 8px;
+}
+.categories__btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    color: #212121;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition:  background-color 250ms linear, color 250ms linear, border-bottom 250ms linear;
+    &:hover{
+        color: #FFFFFF;
+        background-color: var(--btns-links-color)
+    }
+    &:focus{
+        color: #FFFFFF;
+        background-color: var(--btns-links-color)
+    }
+    &:active{
+        color: #FFFFFF;
+        background-color: var(--btns-links-color)
+    } 
+    @include font(500, 16, 26px, 0.03)
+}

@@ -1,0 +1,103 @@
+.header{
+    width: 1200px;
+    margin: 0 auto;
+    @extend %flex-align;
+}
+.header__border{
+    border-bottom: 1px solid #ECECEC;
+}
+.logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    @include font(700, 26, 1.19, 0.03);
+    color: #2196F3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    @extend %flex-align;
+}
+.logo-header{
+    color: #000000;
+    @extend %flex-align;
+}
+.navigation{
+    @extend %flex-align;
+    transition: color 250ms linear;
+}
+.navigation__list{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @extend %flex-align;
+    gap: 50px;
+    margin-left: 93px;
+    transition: color 250ms linear;
+}
+.navigation__link{
+    @include font(500, 14, 1.14, 0.02);
+    color: #212121;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @extend %flex-align;
+    transition: color 250ms linear;
+    position: relative;
+    &.active::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #2196F3;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        left: 0;
+        border-radius: 2px;
+    }
+    &:hover{
+        color: var(--btns-links-color);
+    }
+    &:active{
+        color: var(--btns-links-color);
+    }
+    &:focus{
+        color: var(--btns-links-color);
+    }
+}
+.contacts{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @extend %flex-align;
+    margin-left: auto;
+}
+.contacts__link{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(500, 14, 1.14, 0.02);
+    color: #757575;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @extend %flex-align;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 30px;
+    color: #757575;
+    transition: color 250ms linear;
+    &:hover{
+        fill: var(--btns-links-color);
+        color: var(--btns-links-color);
+    }
+    &:focus{
+        fill: var(--btns-links-color);
+        color: var(--btns-links-color);
+    }
+}
+.contacts__icons{
+    margin-right: 10px;
+    color:#757575;
+    transition: fill 250ms linear;
+}
