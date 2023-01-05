@@ -19,18 +19,18 @@
 }
 .advantages__container{
     width: 100%;
-	padding-left: 15px;
 	padding-right: 15px;
+    padding-left: 15px;
 	margin: 0 auto;
-    // @include tel{
-    //     width: 450px; //420 + 15 +15
-    // }
-    // @include tablet{
-    //     width: 738px; //738 + 15 +15
-    // }
-    // @include desktop{
-    //     width: 1170px; //1170 + 15 +15
-    // }
+    @include tel{
+        width: 450px; //420 + 15 +15
+    }
+    @include tablet{
+        width: 738px; //738 + 15 +15
+    }
+    @include desktop{
+        width: 1170px; //1170 + 15 +15
+    }
 }
 .advantages__list{
     text-decoration: none;
@@ -40,6 +40,9 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+      }
     @include tablet {
         display: flex;
         flex-wrap: wrap;
@@ -88,8 +91,8 @@
         flex-basis: calc((100% - 60px) / 2);
         width: 354px;
       }
-      @include desktop{
+    @include desktop{
         flex-basis: calc((100% - 120px) / 4);
         width: 270px;
-      }
+    }
 }
