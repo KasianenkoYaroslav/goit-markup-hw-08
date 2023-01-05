@@ -261,7 +261,6 @@ body {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -281,11 +280,13 @@ body {
 @media screen and (min-width: 768px) {
   .advantages__bcgrd {
     flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__bcgrd {
     flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
   }
 }
 
@@ -320,11 +321,13 @@ body {
 @media screen and (min-width: 768px) {
   .advantages__descr {
     flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__descr {
     flex-basis: calc((100% - 120px) / 4);
+    width: 270px;
   }
 }
 
